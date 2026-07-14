@@ -29,7 +29,5 @@ spec:
               cpu: "500m"
               memory: "256Mi"
           # Workers have no HTTP server; liveness is a process-level check.
-          livenessProbe:
-           
-          readinessProbe:
+          
           

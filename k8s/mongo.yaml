@@ -28,9 +28,7 @@ spec:
           volumeMounts:
             - name: mongo-data
               mountPath: /data/db
-          livenessProbe:
-           
-          readinessProbe:
+         
           
       volumes:
         - name: mongo-data
