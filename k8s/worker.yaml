@@ -30,12 +30,6 @@ spec:
               memory: "256Mi"
           # Workers have no HTTP server; liveness is a process-level check.
           livenessProbe:
-            exec:
-              command: ["python", "-c", "import socket; socket.create_connection(('redis', 6379), timeout=3)"]
-            initialDelaySeconds: 15
-            periodSeconds: 20
+           
           readinessProbe:
-            exec:
-              command: ["python", "-c", "import socket; socket.create_connection(('redis', 6379), timeout=3)"]
-            initialDelaySeconds: 10
-            periodSeconds: 15
+          
