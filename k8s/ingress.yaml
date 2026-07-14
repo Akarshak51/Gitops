@@ -5,13 +5,8 @@ metadata:
   namespace: ai-task-platform
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-    cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
   ingressClassName: nginx
-  tls:
-    - hosts:
-        - ai-task-platform.example.com
-      secretName: ai-task-tls
   rules:
     - host: ai-task-platform.example.com
       http:
